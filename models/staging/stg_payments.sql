@@ -11,6 +11,7 @@ with source as (
 renamed as (
 
     select
+        current_date() as _etl_loaded_date,
         id as payment_id,
         order_id,
         payment_method,
